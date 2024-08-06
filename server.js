@@ -3,12 +3,25 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config();
+const path = require("path");
+const fileURLToPath = require("url");
+
+//configure dotenv
+dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "./client/build")));
 
+app.use("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 app.post("/api/contact", async (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
 
@@ -46,12 +59,10 @@ app.post("/api/contact", async (req, res) => {
       .status(200)
       .send({ success: true, message: "Message sent successfully!" });
   } catch (error) {
-    res
-      .status(500)
-      .send({
-        success: false,
-        message: "Something went wrong. Please try again later.",
-      });
+    res.status(500).send({
+      success: false,
+      message: "Something went wrong. Please try again later.",
+    });
   }
 });
 
