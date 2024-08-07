@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0f6c0cac.css",
-    "main.js": "/static/js/main.c12c3eb8.js",
+    "main.js": "/static/js/main.bdcda78d.js",
     "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
     "static/media/sql-basic.png": "/static/media/sql-basic.8adf29e0c0953d8f73eb.png",
     "static/media/css-basic.png": "/static/media/css-basic.6df1fab45839f4e120b8.png",
@@ -48,7 +48,6 @@
     "static/media/java-programming-language-icon.svg": "/static/media/java-programming-language-icon.8cb1fd4a951e0324c83e632215f39b64.svg",
     "static/media/node-js-icon.svg": "/static/media/node-js-icon.10354602b1c0786e53037290e5ad547a.svg",
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8bc93fe0d06f04e60c5207d2cba8717d.svg",
-    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
     "static/media/bootstrap-5-logo-icon.svg": "/static/media/bootstrap-5-logo-icon.bb5d7fd6ad99f573329d8b4f60fa02c3.svg",
     "static/media/github-icon-skills.svg": "/static/media/github-icon-skills.8954cfc9a91a6af2700913c47d7f79fb.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.b8d679d67a1bad604a244a4905b16de6.svg",
@@ -61,11 +60,11 @@
     "index.html": "/index.html",
     "static/media/tailwind-css-icon.svg": "/static/media/tailwind-css-icon.d84a6f369e7170891c4a19587ccf78e1.svg",
     "main.0f6c0cac.css.map": "/static/css/main.0f6c0cac.css.map",
-    "main.c12c3eb8.js.map": "/static/js/main.c12c3eb8.js.map",
+    "main.bdcda78d.js.map": "/static/js/main.bdcda78d.js.map",
     "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f6c0cac.css",
-    "static/js/main.c12c3eb8.js"
+    "static/js/main.bdcda78d.js"
   ]
 }
